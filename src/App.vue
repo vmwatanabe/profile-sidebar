@@ -1,26 +1,56 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="sidebar-container">
+    <div class="photo"><img src="./assets/me.png" /></div>
+
+    <div class="items-container">
+      <Item
+        v-for="item in items"
+        :title="item.title"
+        :itemId="item.id"
+        :key="item.id"
+      />
+    </div>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Item from "./components/Item";
+
+const items = [
+  {
+    id: "home",
+    title: "Home",
+  },
+];
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    Item,
+  },
+  data: () => {
+    return {
+      items,
+    };
+  },
+};
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style scoped>
+.sidebar-container {
+  position: relative;
+  width: 100%;
+  padding-top: 1rem;
+}
+
+.photo {
+  width: 80%;
+  border-radius: 33vw;
+  overflow: hidden;
+  margin: auto;
+}
+
+img {
+  width: 100%;
 }
 </style>
