@@ -1,12 +1,12 @@
 <template>
   <div class="sidebar-container">
     <div class="photo"><img src="./assets/me.png" /></div>
-
     <div class="items-container">
       <Item
         v-for="item in items"
         :title="item.title"
         :itemId="item.id"
+        :icon="item.icon"
         :key="item.id"
       />
     </div>
@@ -15,14 +15,7 @@
 
 <script>
 import Item from "./components/Item";
-
-const items = [
-  {
-    id: "home",
-    title: "Home",
-  },
-];
-
+import { menuItems } from "./menu";
 export default {
   name: "App",
   components: {
@@ -30,7 +23,7 @@ export default {
   },
   data: () => {
     return {
-      items,
+      items: menuItems,
     };
   },
 };
@@ -41,6 +34,9 @@ export default {
   position: relative;
   width: 100%;
   padding-top: 1rem;
+  background: #42b983;
+  height: 100%;
+  overflow: hidden;
 }
 
 .photo {
@@ -52,5 +48,10 @@ export default {
 
 img {
   width: 100%;
+}
+
+.items-container {
+  margin-top: 2rem;
+  overflow: auto;
 }
 </style>
