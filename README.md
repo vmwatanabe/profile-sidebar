@@ -1,24 +1,19 @@
-# sidebar
+# profile-sidebar
 
-## Project setup
-```
-yarn install
-```
+## What is this?
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+This is part of the Profile Micro FrontEnd project. All repositories that start with 'profile-' in my GitHub profile are part of this project. The goal is to showcase the [single-spa](https://single-spa.js.org/) framework. You can see it live in [here](https://watanabethedev.com/)!
 
-### Compiles and minifies for production
-```
-yarn build
-```
+## Local development
 
-### Lints and fixes files
-```
-yarn lint
-```
+To run this locally, you will eigher have to run all parcels or modify the profile-root's "systemjs-importmap" script inside src/index.ejs. If you run all parcels, no change is required. All applications run with 'yarn start' command.
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Related repositories
+
+[profile-root](https://github.com/vmwatanabe/profile-root) - The root of the project - single-spa
+
+[profile-sidebar](https://github.com/vmwatanabe/profile-sidebar) - THIS REPOSITORY - The sidebar - Vue.js
+
+[profile-content](https://github.com/vmwatanabe/profile-content) - The content container - React/TypeScript
+
+[profile-styleguide](https://github.com/vmwatanabe/profile-styleguide) - Common styles - JS
