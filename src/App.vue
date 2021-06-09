@@ -54,7 +54,7 @@ export default {
 }
 
 .photo-title {
-  margin-top: 2rem;
+  margin-top: 1rem;
   font-weight: 600;
 }
 
@@ -70,7 +70,7 @@ img {
 }
 
 .items-container {
-  margin-top: 2rem;
+  margin-top: 1rem;
   overflow: auto;
 }
 </style>
