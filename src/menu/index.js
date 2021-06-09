@@ -14,4 +14,9 @@ export const menuItems = [
     title: "React and Vue",
     icon: "extension",
   },
+  {
+    id: "/4",
+    title: "AWS",
+    icon: "apartment",
+  },
 ];
