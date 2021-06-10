@@ -54,7 +54,8 @@ export default {
 }
 
 .photo-title {
-  margin-top: 1rem;
+  margin: 1rem 1rem 0 1rem;
+  text-align: center;
   font-weight: 600;
 }
 
